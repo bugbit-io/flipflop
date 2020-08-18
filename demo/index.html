@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FlipFlop.js</title>
+
+  <link rel="stylesheet" href="../flipflop.css">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <div id="flip_flop_nav"></div>
+
+  <section style="background-color: #2ecc71;">
+    <div class="container">
+      <h1>This is flipflop.js</h1>
+      <h2>A tiny vanilla JavaScript library with no dependancies</h2>
+      <p>It enables scrolling 'page by page'</p>
+      <p>Try scrolling down, or hit the down arrow, or click the navigation on the right hand side</p>
+    </div>
+  </section>
+  <section style="background-color: #af7ac5;">
+    <div class="container">
+      <h2>This demo uses semantic 'section' elements to seperate pages</h2>
+      <p>The main container is document.body by default, change this at your peril.</p>
+      <p>You can also set a preferred section tag:</p>
+      <br>
+      <code>
+        flipFlop({<br>
+          <span style="display: block; text-indent: 20px;">
+            container: document.getElementById('<b>someContainer</b>'),<br>
+          </span>
+          <span style="display: block; text-indent: 20px;">
+            sections: document.getElementsByClassName('<b>yourClassHere</b>')<br>
+          </span>
+        })
+      </code>
+    </div>
+  </section>
+  <section style="background-color: #d4ac0d;">
+    <div class="container">
+      <h2>To use the dots you just add a div with ID 'flip_flop_nav'</h2>
+      <p>If you don't like the selector you can change it:</p>
+      <code>
+        flipFlop({<br>
+          <span style="display: block; text-indent: 20px;">
+            nav: document.getElementById('<b>yourIdHere</b>')<br>
+          </span>
+        })
+      </code>
+      <br>
+      <br>
+      <p>If you only want a certain number of dots you can add them in manually:</p>
+      <code>
+        &lt;div id="flip_flop_nav"&gt;<br>
+          <span style="display: block; text-indent: 20px;">&lt;div class="dot"&gt;&lt;/div&gt;</span>
+          <span style="display: block; text-indent: 20px;">&lt;div class="dot"&gt;&lt;/div&gt;</span>
+          <span style="display: block; text-indent: 20px;">&lt;div class="dot"&gt;&lt;/div&gt;</span>
+        &lt;/div&gt;
+      </code>
+      <p>^ That will give you three</p>
+    </div>
+  </section>
+  <section style="background-color: #45b39d;">
+    <div class="container">
+      <h2>The FlipFloppyness automatically dissapears on mobile &lt; 960px wide.</h2>
+      <p>Or wherever you want:</p>
+      <code>
+        flipFlop({<br>
+          <span style="display: block; text-indent: 20px;">
+            disableOnMax: <b>500</b> // sets minimum pixel width for FlipFloppyness <br>
+          </span>
+        })
+      </code>
+      <br>
+      <br>
+      <p>
+        <mark>Be careful on mobile</mark>,
+        touch screens aren't very flippy floppy
+      </p>
+    </div>
+  </section>
+  <section style="background-color: #ff6347;">
+    <div class="container">
+      <h2>Thank you for making your project more Flippy Floppy!</h2>
+      <p>Made with ♥ by <a href="https://bugbit.io" target="_blank">Bugbit</a></p>
+    </div>
+  </section>
+
+  <script src="../flipflop.js"></script>
+  <script>
+    flipFlop();
+  </script>
+
+</body>
+</html>
