@@ -2,9 +2,12 @@
 
 A tiny vanilla JS library to scroll section by section
 
+
 ## Getting Started
 
+
 Copy and include flipflop.js and flipflop.css into your project.
+
 
 ```
 <link rel="stylesheet" href="pathto/flipflop.css">
@@ -12,7 +15,7 @@ Copy and include flipflop.js and flipflop.css into your project.
 <script src="pathto/flipflop.js"></script>
 ```
 
-You need to init flipFlop immediately if you like:
+You can init FlipFlop immediately if you like:
 
 ```
 <script src="pathto/flipflop.js"></script>
@@ -24,7 +27,7 @@ Or do your init in another JS file.
 
 ### Default options
 
-By default flipFlop will use the document.body as the page container, and use semantic 'section' tags as sections to scroll between.
+By default FlipFlop will use the document.body as the page container, and use semantic 'section' tags as sections to scroll between.
 
 If you wanted three sections with navigation you can add the most basic markup like this:
 
