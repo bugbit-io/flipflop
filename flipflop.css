@@ -10,7 +10,6 @@ html {
     margin: 0;
     -webkit-overflow-scrolling: auto;
 }
-
 body {
     margin: 0;
     height: 100vh;
@@ -19,7 +18,7 @@ body {
 
     scroll-behavior: auto;
 
-    // -webkit-scroll-snap-type: proximity;
+    /* // -webkit-scroll-snap-type: proximity;
     // -ms-scroll-snap-type: proximity;
     // scroll-snap-type: proximity;
     // -webkit-scroll-snap-destination: 0% 100%;
@@ -27,14 +26,12 @@ body {
     // scroll-snap-destination: 0% 100%;
     // -webkit-scroll-snap-points-y: repeat(100%);
     // -ms-scroll-snap-points-y: repeat(100%);
-    // scroll-snap-points-y: repeat(100%);
+    // scroll-snap-points-y: repeat(100%); */
 }
-
-// body:active {
+/* // body:active {
 //     cursor: -webkit-grabbing;
 //     cursor: grabbing;
-// }
-
+// } */
 section {
     box-sizing: border-box;
     width: 100%;
@@ -42,7 +39,6 @@ section {
     min-height: 100vh;
     scroll-snap-align: start;
 }
-
 #flip_flop_nav {
   	z-index: 1;
     position: absolute;
@@ -52,11 +48,9 @@ section {
 }
 #flip_flop_nav .dot {
     box-sizing: border-box;
-    /* background-color: #fff; */
     border-radius: 100px;
     padding: 12px;
 
-    /* opacity: 0.6; */
     -webkit-transition: all 100ms;
          -o-transition: all 100ms;
             transition: all 100ms;
@@ -110,7 +104,6 @@ section {
 #flip_flop_nav .dot:last-of-type.on {
     transform: scale(1.2) rotate(45deg);
 }
-
 /* only for IE 10 + */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     #flip_flop_nav .dot {
@@ -119,7 +112,6 @@ section {
                 transition: none;
     }
 }
-
 /* only for edge  */
 @supports (-ms-ime-align: auto) {
 	/* == this is bloody important for some reason ==*/
@@ -132,11 +124,8 @@ section {
                 transition: none;
     }
 }
-
 @media screen and (max-width: 768px) {
-
     #flip_flop_nav { right: 16px; }
     #flip_flop_nav .dot:hover { background: inherit; }
     #flip_flop_nav .dot.on:hover { opacity: 1; background: rgba(0, 0, 0, 0.1); }
-
 }

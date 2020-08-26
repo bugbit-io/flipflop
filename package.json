@@ -1,0 +1,28 @@
+{
+  "name": "flipflop-scroll",
+  "version": "1.0.2",
+  "description": "A tiny vanilla JS library to scroll section by section",
+  "main": "flipflop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bugbit-io/flipflop.git"
+  },
+  "keywords": [
+    "FliFlop",
+    "Scroll",
+    "Section",
+    "Lazy Scroll",
+    "Vertical Carousel",
+    "Dot Navigation",
+    "Vanilla Javascript"
+  ],
+  "author": "Daniel Untiedt",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/bugbit-io/flipflop/issues"
+  },
+  "homepage": "https://bugbit.io/example/flipflop-scroll"
+}

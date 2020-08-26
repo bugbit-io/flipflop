@@ -2,20 +2,23 @@
 
 A tiny vanilla JS library to scroll section by section
 
+[View example](https://bugbit.io/example/flipflop-scroll)
 
 ## Getting Started
 
 
-Copy and include flipflop.js and flipflop.css into your project.
-
-
+1. Install FlipFlop
 ```
-<link rel="stylesheet" href="pathto/flipflop.css">
-
-<script src="pathto/flipflop.js"></script>
+npm i flipflop
 ```
 
-You can init FlipFlop immediately if you like:
+2. Include styling, this should override any styling you have on html and body elements:
+
+```
+<script src="flipflop-scroll/flipflop.css"></script>
+```
+
+3. Include and init FlipFlop:
 
 ```
 <script src="pathto/flipflop.js"></script>
